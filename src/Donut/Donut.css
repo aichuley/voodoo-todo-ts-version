@@ -1,0 +1,61 @@
+.donut-shape {
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+}
+
+.chocolate {
+  border-color: #a85a32;
+}
+
+.cherry {
+  border-color: #d60202;
+}
+
+.maple {
+  border-color: #d68102;
+}
+
+.glazed {
+  border-color: #fcd579;
+}
+
+.chocolate-filled {
+  border-color: #a85a32;
+  background-color: #a85a32;
+}
+
+.cherry-filled {
+  border-color: #d60202;
+  background-color: #d60202;
+}
+
+.maple-filled {
+  border-color: #d68102;
+  background-color: #d68102;
+}
+
+.glazed-filled {
+  border-color: #fcd579;
+  background-color: #fcd579;
+}
+
+.donut {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border-width: 10px;
+  border-style: solid;
+  position: absolute;
+  cursor: pointer;
+}
+
+.sprinkles {
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.add {
+  cursor: crosshair;
+}
