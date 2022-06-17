@@ -13,6 +13,7 @@ const Donut = ({ handleBoxClick, donutData, userId, isAdd }: DonutTypes) => {
   const donutDescription = `donut ${flavor}${filled ? "-filled" : ""}`;
 
   //HELP:need help with the type of handleClick
+  //not sure what to do here....
   const handleClick = (e: any) => {
     console.log("in Handle CLick");
     // this will prevent this event from bubbeling to the DonutColumn
