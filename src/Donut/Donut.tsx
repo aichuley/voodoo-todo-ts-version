@@ -1,5 +1,6 @@
 import "./Donut.css";
 import { defineDonut } from "../const";
+//import { MouseEventHandler, MouseEvent } from "react";
 import { MouseEvent } from "react";
 
 interface DonutTypes {
@@ -12,7 +13,9 @@ interface DonutTypes {
 const Donut = ({ handleBoxClick, donutData, userId, isAdd }: DonutTypes) => {
   const { flavor, sprinkles, filled, donutId } = donutData;
   const donutDescription = `donut ${flavor}${filled ? "-filled" : ""}`;
-
+  //or can fix with e: MouseEvent as well...
+  //This also works bottom on v
+  //const handleClick: MouseEventHandler<HTMLDivElement> = (e: MouseEvent) => {
   const handleClick = (e: MouseEvent) => {
     console.log("in Handle CLick");
     // this will prevent this event from bubbeling to the DonutColumn
