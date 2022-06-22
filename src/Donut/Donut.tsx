@@ -1,5 +1,6 @@
 import "./Donut.css";
 import { defineDonut } from "../const";
+import { MouseEvent } from "react";
 
 interface DonutTypes {
   handleBoxClick: (userID: string, donutID: string) => void;
@@ -12,9 +13,7 @@ const Donut = ({ handleBoxClick, donutData, userId, isAdd }: DonutTypes) => {
   const { flavor, sprinkles, filled, donutId } = donutData;
   const donutDescription = `donut ${flavor}${filled ? "-filled" : ""}`;
 
-  //HELP:need help with the type of handleClick
-  //not sure what to do here....
-  const handleClick = (e: any) => {
+  const handleClick = (e: MouseEvent) => {
     console.log("in Handle CLick");
     // this will prevent this event from bubbeling to the DonutColumn
     e.stopPropagation();
